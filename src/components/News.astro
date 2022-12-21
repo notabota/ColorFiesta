@@ -1,0 +1,32 @@
+---
+import './News.css'
+import '../shared/styles/Scrollbar.css'
+
+const {news} = Astro.props;
+---
+
+<div id="news"> 
+  <div id="news_container"> 
+    <div id="news_content">
+      <div id="news_title">
+        <p> ABOUT EVENT </p>
+        <h1> NEWS AND INTERESTS </h1>
+      </div>
+      <div id="news_scroll" class="custom-scroll custom-scroll-6">
+        {news.map((info) => (
+          <div class="news_scroll_content">
+            <img class="news_scroll_content_images" src={info.avatar} /> 
+            <div class="news_scroll_content_text">
+              <div class="news_scroll_content_title"> 
+                {info.title}
+              </div>
+              <div class="news_scroll_content_description"> 
+                {info.description}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>

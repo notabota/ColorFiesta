@@ -1,0 +1,19 @@
+---
+import './Artists.css'
+import SyncCarousel from '/src/elements/SyncCarousel.jsx';
+const {artists} = Astro.props;
+---
+
+<div id="artists"> 
+  <div id="artists_container"> 
+    <div id="artists_content">
+      <div id="artists_title">
+        <p> ABOUT EVENT </p>
+        <h1> ARTISTS </h1>
+      </div>
+      <div id="artists_carousel">
+        <SyncCarousel content={artists} client:load/>
+      </div>
+    </div>
+  </div>
+</div>

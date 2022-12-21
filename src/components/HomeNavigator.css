@@ -1,0 +1,109 @@
+#header_nav {
+  height: 5vw;
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+
+#header_nav_logo {
+  margin-left: 5vw;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+#header_nav_logo img {
+  max-width: 100%;
+  max-height: 5vw;
+}
+
+#header_nav_pages {
+  display: flex;
+  float: right;
+  width: 80vw;
+  justify-content: flex-end;
+}
+
+.header_nav_user {
+  background: url(/icons/user.png) no-repeat;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.header_nav_contact {
+  background: url(/icons/identification-card.png) no-repeat;
+}
+.header_nav_about {
+  background: url(/icons/info.png) no-repeat;
+}
+.header_nav_events {
+  background: url(/icons/paper-plane.png) no-repeat;
+}
+
+.header_nav_item {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_nav_item p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 481px) {
+  #header_nav {
+    display: flex;
+  }
+
+  .header_nav_item {
+    margin: 0 2vw;
+  }
+
+  .header_nav_item p {
+    font-size: 1rem;
+    margin: 0 1vw;
+  }
+
+  .header_nav_item i {
+    background-size: contain;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+
+  #header_nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: black;
+    width: 100%;
+  }
+
+  .header_nav_item {
+    margin: 2vh 2vw;
+  }
+
+  .header_nav_item p {
+    font-size: 0.8rem;
+    margin: 0 1vw;
+  }
+
+  .header_nav_item i {
+    background-size: contain;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+}

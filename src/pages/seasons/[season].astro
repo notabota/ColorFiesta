@@ -1,0 +1,215 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import About from '/src/components/About.astro';
+import News from '/src/components/News.astro';
+import Artists from '/src/components/Artists.astro';
+
+export function getStaticPaths() {
+  const pages = [
+    {
+      season: "1",
+      news: [
+        {
+          'avatar': '/images/ava.jpg',
+          'description': 'hey',
+          'title': 'ayo',
+        },
+        {
+          'avatar': '/images/ava.jpg',
+          'description': 'hey',
+          'title': 'ayo',
+        },
+        {
+          'avatar': '/images/ava.jpg',
+          'description': 'hey',
+          'title': 'ayo',
+        },
+      ],
+      artists : [
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'title': 'Erm',
+          'avatar': '/images/ava.jpg',
+        },
+      ],  
+    },
+    {
+      season: "2",
+      news: [
+        {
+          'avatar': '/images/ava.jpg',
+          'description': 'yo',
+          'title': 'ayo',
+        }
+      ],
+      artists : [
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+      ], 
+    },
+    {
+      season: "3",
+      news: [
+        {
+          'avatar': '/images/ava.jpg',
+          'description': 'hmm',
+          'title': 'ayo',
+        }
+      ],
+      artists : [
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+        {
+          'name': 'Humh',
+          'description': 'Heh',
+          'avatar': '/images/ava.jpg',
+        },
+      ],
+    },
+  ];
+  return pages.map(({ season, news, artists }) => {
+    return {
+      params: { season },
+      props: { news , artists },
+    };
+  });
+}
+
+const { season } = Astro.params;
+const { news , artists } = Astro.props;
+
+---
+<Layout title="Seasons">
+<Header />
+<About />
+<News news={news} />
+<div class="gradient_bg"> </div>
+<Artists artists={artists} />
+</Layout>

@@ -1,0 +1,119 @@
+#accordion {
+  margin: 0 5vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#accordion_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding-right: 3px;
+}
+
+#accordion_title h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+#accordion_title h1::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  padding: 0;
+  margin: 0;
+  background-color: #d60204;
+  position: absolute;
+  left: 25%;
+  bottom: -3px;
+}
+
+#accordion_title p,
+#accordion_title h1 {
+  margin: 0;
+}
+
+.accordion-item {
+  position: relative;
+}
+.accordion-item.active .heading {
+  color: #2a0105;
+}
+.accordion-item.active .icon {
+  background: #fefefe;
+}
+.accordion-item.active .icon:before {
+  background: #97c590;
+}
+.accordion-item.active .icon:after {
+  width: 0;
+}
+.accordion-item .heading {
+  display: block;
+  text-decoration: none;
+  color: #2a0105;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  transition: 0.3s ease-in-out;
+}
+@media (min-width: 40rem) {
+  .accordion-item .heading {
+    font-size: 1.2rem;
+  }
+}
+.accordion-item .heading:hover {
+  color: #97c590;
+}
+.accordion-item .heading:hover .icon:before,
+.accordion-item .heading:hover .icon:after {
+  background: #97c590;
+}
+.accordion-item .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #4d1919;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+.accordion-item .icon:before,
+.accordion-item .icon:after {
+  content: "";
+  width: 1.25rem;
+  height: 0.25rem;
+  background: #578550;
+  position: absolute;
+  border-radius: 3px;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.accordion-item .icon:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: -1;
+}
+.accordion-item .content {
+  display: none;
+}
+.accordion-item .content p {
+  margin-top: 0;
+}
+@media (min-width: 40rem) {
+  .accordion-item .content {
+    line-height: 1.75;
+  }
+}

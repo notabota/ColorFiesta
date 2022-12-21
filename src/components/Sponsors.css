@@ -1,0 +1,25 @@
+#sponsors {
+  margin: 10vh 0;
+}
+
+#sponsors_title {
+  margin-bottom: 5vh;
+}
+
+#sponsors_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#sponsors_logos {
+  display: flex;
+}
+
+#sponsors_logos img {
+  max-width: 10vw;
+  margin: 0 3vw;
+  max-height: 100%;
+}

@@ -1,0 +1,121 @@
+img {
+  max-width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border: 0;
+  background: var(--clr-secondary);
+  color: var(--clr-light);
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.game {
+  position: relative;
+  width: 9rem;
+}
+
+.front {
+  transition: 200ms;
+}
+.front > img {
+  border-radius: 12px;
+}
+.front .name {
+  margin: 0.75em 0;
+}
+.front .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  top: 56%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.back .streaming-info {
+  columns: 2;
+  column-rule: 1px solid rgba(255, 255, 255, 0.6);
+}
+.back .game-stat {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.back .game-stat span {
+  display: block;
+  font-size: 0.8rem;
+}
+.back {
+  display: flex;
+}
+
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #191919;
+  z-index: -1;
+  transform: scale(0.2, 0.8);
+  opacity: 0;
+  border-radius: 12px;
+}
+
+.game:hover .front {
+  transform: translateY(-25%) scale(0.8);
+}
+.game:hover .front .name {
+  animation: gameName 150ms forwards;
+}
+.game:hover .front .status {
+  opacity: 0;
+}
+.game:hover .back {
+  opacity: 1;
+}
+.game:hover .back {
+  width: 100%;
+  justify-content: space-between;
+}
+.game:hover .back {
+  font-size: 0.9rem;
+}
+.game:hover .back .name {
+  font-weight: bold;
+}
+
+.game:hover .backgroundWrapper {
+  transition: transform 200ms ease-in-out, opacity 100ms linear;
+  opacity: 1;
+  transform: scale(1.4, 1.2);
+}
+
+@keyframes gameName {
+  0% {
+    text-align: left;
+    opacity: 1;
+  }
+  20% {
+    text-align: left;
+    opacity: 0;
+  }
+  50% {
+    text-align: center;
+    opacity: 0;
+  }
+  100% {
+    text-align: center;
+    opacity: 1;
+  }
+}
