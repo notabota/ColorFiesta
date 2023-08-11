@@ -5,15 +5,10 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 
 <br />
 <div align="center">
-  <!-- <a href="https://github.com/notabota/traffix">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
 
 <h3 align="center">Color Fiesta </h3>
 
@@ -57,8 +52,6 @@
 ## About The Project
 
 This projects serve as a design structure for the Color Fiesta festival website, which include dashboard, timeline, news, notifications and ticket booking system.
-
-<!-- Use the `BLANK_README.md` to get started. -->
 
 <p style="text-align: right;"><a href="#readme-top">back to top</a></p>
 
@@ -144,23 +137,23 @@ Project Link: [https://github.com/notabota/traffix](https://github.com/notabota/
 
 [Firebase-url]: https://firebase.google.com/
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/notabota/ColorFiesta.svg?style=for-the-badge
 
 [contributors-url]: https://github.com/notabota/traffix/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/notabota/ColorFiesta.svg?style=for-the-badge
 
 [forks-url]: https://github.com/notabota/traffix/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/notabota/ColorFiesta.svg?style=for-the-badge
 
 [stars-url]: https://github.com/notabota/traffix/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/notabota/ColorFiesta.svg?style=for-the-badge
 
 [issues-url]: https://github.com/notabota/traffix/issues
 
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/notabota/ColorFiesta.svg?style=for-the-badge
 
 [license-url]: https://github.com/notabota/traffix/blob/master/LICENSE.txt
 
